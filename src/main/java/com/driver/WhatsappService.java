@@ -8,7 +8,7 @@ import java.util.List;
 public class WhatsappService {
     WhatsappRepository whatsappRepository = new WhatsappRepository();
 
-    public boolean isNewUser(String mobile) {
+    public boolean userExist(String mobile) {
         return whatsappRepository.userExist(mobile);
     }
 
